@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="styles.css"
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <title>E-book Website</title>
+</head>
+
+<body>
+  
+  <header>
+    <nav class="navbar">
+      <div class="brand">
+        <i class="fa-solid fa-book-open-reader"></i>
+      <h1 class="logo">Flibrary</h1>
+      </div>
+        <div class="menu-toggle" id="menutoggle">
+           <span></span>
+           <span></span>
+           <span></span>
+        </div>
+      <ul class="nav-links" id="navlinks">
+        <li><a href="">Home</a></li>
+        <li><a href="">Books</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <!-- Search -->
+    <section id="homeSection" class="home">
+      <form id="searchForm">
+        <input type="text" autocomplete="off" id="searchInput" placeholder="Search for books...">
+        <button type="submit" id="searchBtn"><i class="fa-solid fa-magnifying-glass icon"></i></button>
+      </form>
+    </section>
+  </main> 
+  
+  <!-- Search Results -->
+  <section class="books">
+  <section class="book-section">
+    <h2>Search Results</h2>
+    <div class="book-row" id="search-results"></div>
+  </section>
+  
+  <!-- Featured -->
+  <section class="book-section">
+    <h2>Featured</h2>
+    <div class="book-row" id="featured-books"></div>
+  </section>
+
+  <!-- Most Popular -->
+  <section class="book-section">
+    <h2>Most Popular</h2>
+    <div class="book-row" id="popular-books"></div>
+  </section>
+
+  <!-- Genres -->
+  <section class="book-section">
+    <h2>Genres</h2>
+    <div class="book-row" id="genre-books"></div>
+  </section>
+
+  <!-- Collection -->
+  <section class="book-section">
+    <h2>My Collection</h2>
+    <div class="book-row" id="collection-books"></div>
+  </section>
+
+  <!-- Modal -->
+  <div id="bookModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <img id="modal-thumbnail" src="" alt="Book Cover">
+      <h3 id="modal-title"></h3>
+      <p id="modal-authors"></p>
+      <p id="modal-year"></p>
+      <p id="modal-rating"></p>
+      <p id="modal-description"></p>
+    </div>
+  </div>
+    </section>
+    
+<section class="about-section">
+  <div class="about-container">
+    <h2>About Flibrary</h2>
+    <p>
+      Flibrary is your personal online library, designed to help book lovers
+      discover new stories and save their favorites. Whether you're into fantasy,
+      romance, science, or thrillers, we bring together books from all genres to
+      make your reading journey exciting.
+    </p>
+    <p>
+      With our search, genre browsing, and personal collection features, Flibrary
+      makes it easier than ever to find and organize the books you love.
+      Our mission is simple to connect people with books that inspire,
+      entertain, and last a lifetime.
+    </p>
+  </div>
+</section>
+
+<section id="contact" class="contact-section">
+  <h2>Contact Us</h2>
+  <p>Have questions, feedback, or suggestions? We'd love to hear from you!</p>
+
+  <form class="contact-form">
+    <div class="form-group">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    </div>
+
+    <div class="form-group">
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+    </div>
+
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+
+  <div class="contact-info">
+    <p>Email: <a href="mailto:flibrary@example.com">flibrary@example.com</a></p>
+    <p>Follow us:</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </div>
+</section>
+
+  <script src="script.js"></script>
+  
+</body>
+
+</html>
